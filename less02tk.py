@@ -17,8 +17,6 @@ def clickedB():
 window = Tk()  
 window.title("Robot and I")  
 window.geometry('640x480')  
-lbl = Label(window, text="Python app for COM port", font=("Arial Bold", 5))  
-lbl.grid(column=0, row=1)
 
 btnR = Button(window, text=" Red ",background="red", foreground="black",
              padx="20", pady="8", font="16", command=clickedR)  
