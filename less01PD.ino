@@ -10,8 +10,10 @@ void loop() {
 while (Serial.available()){
   data = Serial.read();
 }
-if (data == '1')
-digitalWrite (LED_BUILTIN, HIGH);
-else if (data == '0')
-digitalWrite (LED_BUILTIN, LOW);
+  if (data == '1'){
+    digitalWrite (LED_BUILTIN, HIGH);
+  }
+  else if (data == '0'){
+    digitalWrite (LED_BUILTIN, LOW);
+  }
 }
